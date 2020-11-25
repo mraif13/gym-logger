@@ -1,4 +1,4 @@
-const staticCacheName = "mbc-live";
+const staticCacheName = "Gym Logger";
 const assets = [
   "/",
   "/index.html",

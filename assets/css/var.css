@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  --bg-color: #f5ee9e;
+  background-color: #f5ee9e;
+  color: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+main {
+  background-color: var(--bg-color);
+  padding-bottom: 56px;
+}
+
+.card {
+  background-color: #f49e4c;
+  position: relative;
+  transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 10px;
+  color: #fafafa;
+  padding: 5px;
+  margin: 5px;
+}
+
+.card-title {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+
+.card-supporting-text,
+.card-supporting-text2 {
+  padding: 5px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 384px) {
+  .smart-grid > .card {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 671px) {
+  .smart-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 672px) {
+  /* <main> doesn't get covered by side nav */
+  main {
+    margin-left: 64px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .smart-grid {
+    padding: 56px;
+  }
+}
+
+/* Shamelessly stolen from materialize */
+.progress {
+  position: relative;
+  height: 6px;
+  display: block;
+  width: 100%;
+  background-color: var(--color-main);
+  background-clip: padding-box;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress .indeterminate {
+  background-color: #2d728f;
+}
+
+.progress .indeterminate:before {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-animation: indeterminate 500ms cubic-bezier(0.65, 0.815, 0.735, 0.395)
+    infinite;
+  -moz-animation: indeterminate 500ms cubic-bezier(0.65, 0.815, 0.735, 0.395)
+    infinite;
+  animation: indeterminate 500ms cubic-bezier(0.65, 0.815, 0.735, 0.395)
+    infinite;
+  border-radius: 50px;
+}
+
+.progress .indeterminate:after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-animation: indeterminate-short 1200ms
+    cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -moz-animation: indeterminate-short 1200ms cubic-bezier(0.165, 0.84, 0.44, 1)
+    infinite;
+  animation: indeterminate-short 1200ms cubic-bezier(0.165, 0.84, 0.44, 1)
+    infinite;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+  border-radius: 50px;
+}
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@-webkit-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+.mbc-logos {
+  position: relative;
+  top: -10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.logo-img {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  top: -15px;
+  opacity: 0.8;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  left: 0px;
+  top: 39px;
+  justify-content: center;
+  background: #b1ab72;
+}
+.gudmorning {
+  padding: 10px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+}
+.desc {
+  color: #0e0504;
+  text-align: center;
+  justify-content: center;
+}

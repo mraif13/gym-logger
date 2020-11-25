@@ -1,37 +1,22 @@
 const staticCacheName = "Gym Logger";
-const assets = [
-  "/",
-  "/index.html",
-  "/assets/js/nav.js",
-  "/assets/css/var.css",
-  "/assets/css/app.js",
-  "/assets/css/chgt.js",
-  "/assets/css/nav.js",
-  "/assets/img/logo-min.png",
-  "/assets/logos/arm.png",
-  "/assets/logos/back.png",
-  "/assets/logos/chest.png",
-  "/assets/logos/forearm.png",
-  "/assets/logos/leg.png",
-  "/assets/logos/shoulders.png",
-  "/assets/logos/torso.png",
-  "/assets/icons",
-  "/assets/icons/android",
-  "/assets/icons/chrome",
-  "/assets/icons/firefox",
-  "/assets/icons/mstreams",
-  "/assets/icons/windows",
-  "/assets/icons/windows10",
-];
 // install event
-self.addEventListener("install", (evt) => {
-  evt.waitUntil(
-    caches.open(staticCacheName).then((cache) => {
-      console.log("caching shell assets");
-      cache.addAll(assets);
+self.addEventListener("install", function (event) {
+  event.waitUntil(
+    caches.open(cacheName).then(function (cache) {
+      return cache.addAll([
+        "/index.html",
+        "/assets/css/var.css",
+        "/assets/js/app.js",
+        "/assets/js/chgt.js",
+        "/assets/js/nav.js",
+        "/assets/img",
+        "/assets/icons",
+        "/assets/img/logos",
+      ]);
     })
   );
 });
+
 // activate event
 self.addEventListener("activate", (evt) => {
   evt.waitUntil(

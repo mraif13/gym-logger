@@ -13,7 +13,14 @@
     <script src="/assets/js/app.js"></script>
   </head>
   <body>
-    <!-- partial:index.partial.html -->
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
 
     <div class="header">
       <a href="/"> 

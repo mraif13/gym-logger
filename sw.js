@@ -23,7 +23,6 @@ const assets = [
   "/assets/icons/mstreams",
   "/assets/icons/windows",
   "/assets/icons/windows10",
-  "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap",
 ];
 // install event
 self.addEventListener("install", (evt) => {

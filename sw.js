@@ -2,7 +2,6 @@ const staticCacheName = "Gym Logger";
 const assets = [
   "/",
   "/index.html",
-  "/manifest.json",
   "/assets/js/nav.js",
   "/assets/css/var.css",
   "/assets/css/app.js",

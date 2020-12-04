@@ -3,8 +3,8 @@
   "short_name": "Gym Logger",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#f5ee9e",
-  "theme_color": "#f5ee9e",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "portrait-primary",
   "icons": [
     {

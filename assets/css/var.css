@@ -2,9 +2,9 @@
 :root {
   font-family: "Lato", sans-serif;
   font-size: 100%;
-  --bg-color: #f5ee9e;
-  background-color: #f5ee9e;
-  color: #fafafa;
+  --bg-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 * {
@@ -23,7 +23,7 @@ main {
 }
 
 .card {
-  background-color: #f49e4c;
+  background-color: #0c0c0c;
   position: relative;
   transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
@@ -36,7 +36,7 @@ main {
   padding: 10px;
   font-size: 22px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -89,7 +89,7 @@ main {
 }
 
 .progress .indeterminate {
-  background-color: #2d728f;
+  background-color: #505050;
 }
 
 .progress .indeterminate:before {
@@ -214,17 +214,17 @@ main {
   left: 0px;
   top: 39px;
   justify-content: center;
-  background: #b1ab72;
+  background: #00000048;
 }
 .gudmorning {
   padding: 10px;
-  color: #000;
+  color: #fc0054f8;
   font-size: 17px;
   font-weight: 700;
   text-align: center;
 }
 .desc {
-  color: #0e0504;
+  color: #fffffff8;
   text-align: center;
   justify-content: center;
 }

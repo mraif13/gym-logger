@@ -65,7 +65,7 @@ const appendContent = (x, label = "Home") => {
             <section class="card-title"> Credits </section>
 
             <section class="card-supporting-text2">
-<p class="gudmorning">V1.3 <br/>
+<p class="gudmorning">v2.0 <br/>
 Created by mraif13</p>
             </section>
 
